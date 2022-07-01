@@ -1,0 +1,16 @@
+ * {
+    background-color: var(--background-base-color);
+}
+
+:root {
+    --background-base-color: rgb(40, 48, 60);
+    --background-focus-color: rgb(32, 43, 60);
+    --background-box-color: rgb(50, 60, 75);
+
+
+    --text-main-focus: rgb(120, 120, 120);
+}
+
+body {
+    margin: auto;
+}

@@ -1,0 +1,13 @@
+.Heading {
+    display: flex;
+
+
+    background-color: var(--background-focus-color);
+}
+
+.Split {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+

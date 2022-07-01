@@ -1,18 +1,28 @@
 
+import { BrowserView, MobileView } from 'react-device-detect';
 import navigateCallback from '../functions/navigate';
 
 import './Menu.css';
 
-type MenuParameter = {
+export type MenuParameter = {
     name: string,
     path: string
 }
 
 const Menu = (param: MenuParameter) => {
     return (
-        <div className="MenuPadding">
-            <h2 onClick={navigateCallback(param.path)}>{param.name}</h2>
-        </div>
+        <>
+            <BrowserView>
+                <div className="MenuPadding_Browzer">
+                    <h2 className='ContentPadding_Browzer' onClick={navigateCallback(param.path)}>{param.name}</h2>
+                </div>
+            </BrowserView>
+            <MobileView>
+                <div className="MenuPadding_Mobile">
+                    <h2 className='ContentPadding_Mobile' onClick={navigateCallback(param.path)}>{param.name}</h2>
+                </div>
+            </MobileView>
+        </>
     )
 }
 

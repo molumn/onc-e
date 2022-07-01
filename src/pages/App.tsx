@@ -1,21 +1,35 @@
-import { Component } from "react";
+import React from "react";
 import Menu from "../components/Menu";
+import { MainTitle } from "../components/Title";
+import Heading from "../container/Heading";
+import MenuBar from "../container/MenuBar";
+
+import './App.css';
 
 
-class App extends Component {
+export default class App extends React.Component {
 
   render() {
     return (
       <div className="App">
-        <h1>Hello World!</h1>
-        <div className="Internal App">
-          <Menu name="Home" path="/"/>
-          <Menu name="Docs" path="/docs"/>
-        </div>
+        <Heading 
+          front={
+            <MainTitle title="Hello World" path="/"/>
+          } 
+          end={
+            <MenuBar 
+              element={
+                <>
+                  <Menu name="Home"   path="" />
+                  <Menu name="Docs"   path="/docs" />
+                  <Menu name="About"  path="/about" />
+                </>
+              }
+            />
+          }
+        />
       </div>
     )
   }
 
 }
-
-export default App;

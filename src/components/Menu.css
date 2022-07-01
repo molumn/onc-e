@@ -1,5 +1,20 @@
 
-.MenuPadding {
+.MenuPadding_Browzer {
     color: aqua;
-    font-weight: 570;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 1em;
+	margin-inline-end: 1em;
+	font-weight: bold;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.ContentPadding_Browzer {
+    margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0em;
+	margin-inline-end: 0em;
+
+    background-color: rgba(0, 0, 0, 0);
 }
